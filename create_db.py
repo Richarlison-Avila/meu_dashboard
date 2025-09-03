@@ -11,4 +11,4 @@ from app.models.agenda_model import AgendaItem
 if __name__ == "__main__":
     print("📦 Criando tabelas no banco de dados...")
     Base.metadata.create_all(bind=engine)
-    print("✅ Banco de dados pronto!")
+    print("✅ Banco de dados pronto TESTE!")
