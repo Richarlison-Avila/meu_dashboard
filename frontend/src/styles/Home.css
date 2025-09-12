@@ -1,0 +1,39 @@
+.home {
+  padding: 20px;
+}
+
+.home h1 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-top: 5px solid #3b82f6; /* padrão, mas será sobrescrito pelo style inline */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  color: #374151;
+}
+
+.card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #111827;
+}

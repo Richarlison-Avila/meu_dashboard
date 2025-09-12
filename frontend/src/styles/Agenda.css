@@ -1,0 +1,27 @@
+.agenda {
+  padding: 20px;
+}
+
+.agenda h1 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.agenda table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.agenda th, .agenda td {
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  text-align: left;
+}
+
+.agenda th {
+  background-color: #f3f4f6;
+}
+
+.agenda tr:nth-child(even) {
+  background-color: #f9fafb;
+}

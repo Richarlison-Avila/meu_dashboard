@@ -28,3 +28,21 @@ def home():
 # Incluir rotas
 app.include_router(auth_routes.router)     # já tem prefixo no próprio arquivo
 app.include_router(agenda_routes.router)   # idem
+
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()
+
+# Liberar acesso do frontend
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # depois podemos restringir
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/ping")
+def ping():
+    return {"message": "pong"}

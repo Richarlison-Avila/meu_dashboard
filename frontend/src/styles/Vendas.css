@@ -1,0 +1,27 @@
+.vendas {
+  padding: 20px;
+}
+
+.vendas h1 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.vendas table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vendas th, .vendas td {
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  text-align: left;
+}
+
+.vendas th {
+  background-color: #f3f4f6;
+}
+
+.vendas tr:nth-child(even) {
+  background-color: #f9fafb;
+}
